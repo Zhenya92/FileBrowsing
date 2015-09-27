@@ -1,0 +1,46 @@
+﻿<div class="content" ng-app="myApp" ng-controller="values">
+
+    <div id="results">
+        <table class="numbersOfFilesBlock">
+            <thead>
+                <tr>
+                    <th>Less 10mb</th>
+                    <th>10mb-50mb</th>
+                    <th>More 100mb</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{directoryModel.currendDirInfo.NumberOfFiles.Less10}}</td>
+                    <td>{{directoryModel.currendDirInfo.NumberOfFiles.Between10And50}}</td>
+                    <td>{{directoryModel.currendDirInfo.NumberOfFiles.MoreThan100}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong style="font-size:18px;">Current path:</strong>{{directoryModel.CurrentPath}}</p>
+        <h4>Folders</h4>
+        <div class="backTo">
+            <p class="directory_item"><a ng-click="openDirectory(directoryModel.currendDirInfo.ParentFolder.FullName)">{{directoryModel.currendDirInfo.ParentFolder.Name}}</a></p>
+            <p class="directory_item"><a ng-click="openDirectory(directoryModel.BaseFolder.FullName)">{{directoryModel.BaseFolder.Name}}</a></p>
+        </div>
+        <ul class="directory_list">
+            <li class="directory_item" ng-repeat="directory in directoryModel.currendDirInfo.Directories">
+                <a href="{{directory.FullName}}" ng-click="openDirectory(directory.FullName)">{{directory.Name}}</a>
+            </li>
+        </ul>
+        <div class="files_block">
+            <h4>Files</h4>
+            <ul class="file_list">
+                <li class="directory_item" ng-repeat="file in directoryModel.currendDirInfo.Files">
+                    <a href="{{file.FullName}}">{{file.Name}}</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="loader" style="position:fixed;left:48%;top:48%">
+    <img src="~/Images/loader.gif" />
+</div>

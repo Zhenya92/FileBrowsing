@@ -1,0 +1,23 @@
+﻿@model FileBrowsing.Models.Search
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/app/Scripts/other/jquery-1.8.2.min.js"></script>
+    <script src="~/app/Scripts/other/angular.min.js"></script>
+    <script src="~/app/Scripts/other/angular-route.min.js"></script>
+
+</head>
+<body>
+    @RenderBody()
+
+    <script src="~/app/Scripts/app.js"></script>
+    <script src="~/app/Scripts/services/DirectoryService.js"></script>
+    <script src="~/app/Scripts/controllers/valueController.js"></script>
+</body>
+</html>

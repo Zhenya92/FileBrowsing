@@ -1,0 +1,57 @@
+﻿.content {
+    width: 80%;
+    margin: 5% auto 0 auto;
+    background-color: #F7F7F7;
+}
+
+#results {
+    width: 80%;
+    padding: 5% 10% 0 10%;
+}
+
+.numbersOfFilesBlock {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+    .numbersOfFilesBlock thead {
+        border: 1px solid #B3B3B3;
+    }
+
+    .numbersOfFilesBlock th {
+        font-size: 1.2em;
+        text-align: left;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        background-color: #B3B3B3;
+        color: white;
+    }
+
+    .numbersOfFilesBlock td {
+        border: 1px solid #B3B3B3;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+
+.backTo a{
+font-size:20px;
+cursor:pointer;
+border-bottom: 1px solid #B1DAF6;
+}
+
+.directory_list, .file_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.directory_item a {
+    color: #B1DAF6;
+}
+
+    .directory_item a:hover {
+        color: #B1DAF6;
+        background-color: #F7F7F7;
+    }
