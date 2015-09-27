@@ -26,14 +26,14 @@
         </div>
         <ul class="directory_list">
             <li class="directory_item" ng-repeat="directory in directoryModel.currendDirInfo.Directories">
-                <a href="{{directory.FullName}}" ng-click="openDirectory(directory.FullName)">{{directory.Name}}</a>
+                <a href="" ng-click="openDirectory(directory.FullName)">{{directory.Name}}</a>
             </li>
         </ul>
         <div class="files_block">
             <h4>Files</h4>
             <ul class="file_list">
                 <li class="directory_item" ng-repeat="file in directoryModel.currendDirInfo.Files">
-                    <a href="{{file.FullName}}">{{file.Name}}</a>
+                    <a href="">{{file.Name}}</a>
                 </li>
             </ul>
         </div>
